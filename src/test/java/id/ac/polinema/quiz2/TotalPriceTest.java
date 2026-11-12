@@ -16,7 +16,7 @@ class TotalPriceTest {
         orders.add(new TestSupport.TestOrder("L1", 2));
         orders.add(new TestSupport.TestAbilityOrder("L2", 3));
         assertEquals(5000.0, RideCalculator.totalFare(orders), 0.001,
-                "Panggil calculateFare() pada tiap Ride lalu jumlahkan (Pertemuan 10: polimorfisme)");
+                "Panggil calculateFare() pada tiap Ride lalu jumlahkan");
     }
 
     @Test

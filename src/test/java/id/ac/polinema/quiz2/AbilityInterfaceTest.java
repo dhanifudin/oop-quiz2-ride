@@ -13,7 +13,7 @@ class AbilityInterfaceTest {
     void sub2ImplementsAbility() throws Throwable {
         Ride order = TestSupport.newStudentOrder("CarRide", "L1", 4);
         assertTrue(order instanceof Insurable,
-                "CarRide harus implements Insurable (Pertemuan 9: interface untuk kemampuan tambahan)");
+                "CarRide harus implements Insurable");
     }
 
     @Test

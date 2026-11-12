@@ -12,7 +12,7 @@ class PassengerConstructorGetterTest {
     void constructorStoresValues() {
         Passenger entity = new Passenger("C001", "Budi Santoso");
         assertEquals("C001", entity.getPassengerId(),
-                "getPassengerId() harus mengembalikan kode yang dikirim ke constructor (Pertemuan 2: class dan object)");
+                "getPassengerId() harus mengembalikan kode yang dikirim ke constructor");
         assertEquals("Budi Santoso", entity.getName(),
                 "getName() harus mengembalikan nama yang dikirim ke constructor");
     }

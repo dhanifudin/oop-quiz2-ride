@@ -13,7 +13,7 @@ class ValidateTest {
     @DisplayName("validate melempar InvalidDistanceException untuk jarak 0 atau negatif")
     void throwsForZeroOrNegative() {
         assertThrows(InvalidDistanceException.class, () -> RideCalculator.validate(new TestSupport.TestOrder("L1", 0)),
-                "jarak 0 tidak valid: lempar InvalidDistanceException (Pertemuan 10: throw)");
+                "jarak 0 tidak valid: lempar InvalidDistanceException");
         assertThrows(InvalidDistanceException.class, () -> RideCalculator.validate(new TestSupport.TestOrder("L1", -2)),
                 "jarak negatif tidak valid: lempar InvalidDistanceException");
     }

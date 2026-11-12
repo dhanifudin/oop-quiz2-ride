@@ -20,6 +20,6 @@ class DeskPrintsNothingTest {
         assertEquals(1, printer.ids.size(),
                 "checkout harus menyerahkan pekerjaan mencatat ke PaymentMethod (tidak boleh dibiarkan kosong)");
         assertEquals("", output,
-                "RideDispatcher tidak boleh memakai System.out: tugas mencatat milik PaymentMethod (Pertemuan 11: SRP, satu kelas satu tanggung jawab)");
+                "RideDispatcher tidak boleh memakai System.out: tugas mencatat milik PaymentMethod");
     }
 }

@@ -15,7 +15,7 @@ class NoConcretePrinterTest {
     void noConcreteField() {
         for (Field f : RideDispatcher.class.getDeclaredFields()) {
             assertFalse(CashPayment.class.isAssignableFrom(f.getType()),
-                    "Field '" + f.getName() + "' tidak boleh bertipe CashPayment: pakai interface PaymentMethod (Pertemuan 11: DIP)");
+                    "Field '" + f.getName() + "' tidak boleh bertipe CashPayment: pakai interface PaymentMethod");
         }
     }
 

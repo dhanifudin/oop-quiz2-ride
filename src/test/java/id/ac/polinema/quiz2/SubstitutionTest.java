@@ -24,7 +24,7 @@ class SubstitutionTest {
         for (Ride order : all) {
             desk.checkout(order.getRideId());
         }
-        assertEquals(4, printer.ids.size(), "Semua jenis harus bisa di-checkout dengan cara yang sama (Pertemuan 11: LSP)");
+        assertEquals(4, printer.ids.size(), "Semua jenis harus bisa di-checkout dengan cara yang sama");
         for (int i = 0; i < all.size(); i++) {
             assertEquals(all.get(i).calculateFare(), printer.amounts.get(i), 0.001,
                     "Jumlah untuk " + all.get(i).getRideId() + " harus sama dengan calculateFare() miliknya");

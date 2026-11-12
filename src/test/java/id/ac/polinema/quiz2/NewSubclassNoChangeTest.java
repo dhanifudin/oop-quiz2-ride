@@ -19,7 +19,7 @@ class NewSubclassNoChangeTest {
         Ride fresh = new TestSupport.ScooterRide("N1", 2);
         desk.add(fresh);
         assertSame(fresh, desk.findById("N1"),
-                "Jenis baru harus bisa disimpan dan ditemukan tanpa mengubah RideDispatcher (Pertemuan 11: OCP)");
+                "Jenis baru harus bisa disimpan dan ditemukan tanpa mengubah RideDispatcher");
     }
 
     @Test

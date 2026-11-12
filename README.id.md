@@ -25,7 +25,7 @@ Kuis dibagi menjadi **lima tahap yang makin sulit**. Urutannya mengikuti urutan 
 - **Tahap 1 sampai 3 bernilai 55 poin.** Bila kamu menyelesaikan ketiganya, kamu sudah lulus dengan nyaman.
 - **Tiap tahap berdiri sendiri.** Tes tahap 3 sampai 5 memakai kelas buatan tes, bukan kelas buatanmu. Bila kamu macet di satu tahap, lanjutkan ke tahap berikutnya: poinnya tetap bisa kamu dapat.
 - **Semua tes terlihat.** Buka folder `src/test` untuk membaca apa yang diperiksa. Kamu boleh membacanya, tetapi tidak boleh mengubahnya.
-- **Tes yang gagal memberi petunjuk.** Pesan gagal menyebut aturan yang dilanggar dan pertemuan yang perlu kamu baca lagi.
+- **Tes yang gagal memberi petunjuk.** Pesan gagal menyebut aturan yang dilanggar.
 
 ## Diagram Kelas
 
@@ -73,8 +73,6 @@ Contoh ini dikerjakan tahap demi tahap. Perhatikan polanya, lalu terapkan pada O
 
 **Tujuan:** melengkapi `Passenger` agar menyimpan data dan menjaga nama tetap valid.
 
-**Baca lagi:** Pertemuan 2 (class dan object) dan Pertemuan 3 (enkapsulasi).
-
 **Yang kamu kerjakan:**
 
 1. Deklarasikan field untuk kode dan nama. Semua field `private`.
@@ -92,8 +90,6 @@ Field dituliskan di bagian atas kelas, masing-masing diawali `private`. Di const
 ## Tahap 2: Kelas Abstrak dan Interface (20 poin)
 
 **Tujuan:** membuat dua subclass dari `Ride`, dan memberi kemampuan tambahan hanya pada salah satunya.
-
-**Baca lagi:** Pertemuan 9 (kelas abstrak, interface, memilih keduanya) dan Pertemuan 6 sampai 7 (`extends`, `super`, `@Override`).
 
 **Yang kamu kerjakan:**
 
@@ -113,8 +109,6 @@ Kelas baru dibuat di folder yang sama dengan kelas lain. Constructor subclass me
 
 **Tujuan:** melengkapi `RideCalculator` agar memproses banyak perjalanan lewat tipe `Ride`, dan menolak data yang tidak valid dengan exception.
 
-**Baca lagi:** Pertemuan 10 (polimorfisme, `instanceof`, `try`/`catch`, `throw`, `throws`).
-
 **Yang kamu kerjakan:**
 
 1. `totalFare`: jumlahkan tarif semua perjalanan dalam satu looping. Daftar kosong menghasilkan 0.
@@ -133,8 +127,6 @@ Satu looping cukup. Di dalamnya, panggil method yang sama pada tiap objek, dan b
 ## Tahap 4: Collections (15 poin)
 
 **Tujuan:** melengkapi `RideDispatcher` agar menyimpan perjalanan dan mencarinya dengan cepat.
-
-**Baca lagi:** Pertemuan 11 (bagian Collections: `ArrayList` dan `Map`).
 
 **Yang kamu kerjakan:**
 
@@ -156,8 +148,6 @@ Dua koleksi bekerja berdampingan: `List` mengingat urutan, `Map` mencari lewat k
 ## Tahap 5: SOLID (30 poin)
 
 **Tujuan:** menerapkan prinsip SOLID pada `RideDispatcher` lewat satu method, `checkout`.
-
-**Baca lagi:** Pertemuan 11 (bagian SOLID: SRP, OCP, LSP, ISP, DIP).
 
 **Yang kamu kerjakan:**
 
@@ -226,7 +216,7 @@ Ini proyek Maven biasa, tanpa konfigurasi tambahan.
 
 ## Membaca Hasil Tes
 
-Jalankan `mvn test` di terminal, atau lihat tab **Actions**. Tiap tes yang gagal menulis satu kalimat yang menyebut **aturan yang dilanggar** dan **pertemuan yang perlu dibaca ulang**. Perbaiki satu kelompok tes pada satu waktu, lalu jalankan kelompok itu lagi. Bila muncul error `Not implemented yet`, method itu masih kosong.
+Jalankan `mvn test` di terminal, atau lihat tab **Actions**. Tiap tes yang gagal menulis satu kalimat yang menyebut **aturan yang dilanggar**. Perbaiki satu kelompok tes pada satu waktu, lalu jalankan kelompok itu lagi. Bila muncul error `Not implemented yet`, method itu masih kosong.
 
 ## Penilaian
 

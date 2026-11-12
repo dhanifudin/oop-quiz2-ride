@@ -17,7 +17,7 @@ class PassengerEncapsulationTest {
         assertTrue(fields.length >= 2, "Passenger harus punya field untuk kode dan nama");
         for (Field f : fields) {
             assertTrue(Modifier.isPrivate(f.getModifiers()),
-                    "Field '" + f.getName() + "' harus private (Pertemuan 3: enkapsulasi)");
+                    "Field '" + f.getName() + "' harus private");
         }
     }
 

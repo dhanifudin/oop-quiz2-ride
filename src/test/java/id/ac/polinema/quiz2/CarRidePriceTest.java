@@ -12,7 +12,7 @@ class CarRidePriceTest {
     void priceIsMeasureTimesRate() throws Throwable {
         Ride order = TestSupport.newStudentOrder("CarRide", "L1", 5);
         assertEquals(5 * 4000.0, order.calculateFare(), 0.001,
-                "CarRide: 5 km harus Rp 4.000 per km x 5 (Pertemuan 7: override method)");
+                "CarRide: 5 km harus Rp 4.000 per km x 5");
     }
 
     @Test

@@ -16,7 +16,7 @@ class SubclassStructureTest {
     void sub1ExtendsBase() {
         Class<?> c = TestSupport.loadClass("BikeRide");
         assertTrue(Ride.class.isAssignableFrom(c) && c != Ride.class,
-                "BikeRide harus extends Ride (Pertemuan 9: kelas abstrak, subclass mengisi method abstrak)");
+                "BikeRide harus extends Ride");
     }
 
     @Test
@@ -24,7 +24,7 @@ class SubclassStructureTest {
     void sub2ExtendsBase() {
         Class<?> c = TestSupport.loadClass("CarRide");
         assertTrue(Ride.class.isAssignableFrom(c) && c != Ride.class,
-                "CarRide harus extends Ride (Pertemuan 9: kelas abstrak, subclass mengisi method abstrak)");
+                "CarRide harus extends Ride");
     }
 
     @Test
@@ -41,7 +41,7 @@ class SubclassStructureTest {
     void constructorPassesToSuper() throws Throwable {
         Ride a = TestSupport.newStudentOrder("BikeRide", "L1", 5);
         Ride b = TestSupport.newStudentOrder("CarRide", "L2", 3);
-        assertEquals("L1", a.getRideId(), "Panggil super(...) di constructor BikeRide (Pertemuan 6: super)");
-        assertEquals(3.0, b.getDistanceKm(), 0.001, "Panggil super(...) di constructor CarRide (Pertemuan 6: super)");
+        assertEquals("L1", a.getRideId(), "Panggil super(...) di constructor BikeRide");
+        assertEquals(3.0, b.getDistanceKm(), 0.001, "Panggil super(...) di constructor CarRide");
     }
 }

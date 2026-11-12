@@ -20,6 +20,6 @@ class DeskAddCountTest {
         RideDispatcher desk = new RideDispatcher(new TestSupport.RecordingPrinter());
         desk.add(new TestSupport.TestOrder("L1", 2));
         desk.add(new TestSupport.TestOrder("L2", 3));
-        assertEquals(2, desk.count(), "Setelah dua kali add, count() harus 2 (Pertemuan 11: ArrayList bertambah otomatis)");
+        assertEquals(2, desk.count(), "Setelah dua kali add, count() harus 2");
     }
 }

@@ -15,7 +15,7 @@ class DeskFindByIdTest {
         Ride second = new TestSupport.TestOrder("L2", 3);
         desk.add(first);
         desk.add(second);
-        assertSame(second, desk.findById("L2"), "findById(\"L2\") harus mengembalikan objek yang sama (Pertemuan 11: Map mencari lewat kunci)");
+        assertSame(second, desk.findById("L2"), "findById(\"L2\") harus mengembalikan objek yang sama");
         assertSame(first, desk.findById("L1"), "findById(\"L1\") harus mengembalikan objek yang sama");
     }
 }

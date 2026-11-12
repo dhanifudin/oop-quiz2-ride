@@ -16,7 +16,7 @@ class CheckoutUsesPrinterTest {
         desk.add(new TestSupport.TestOrder("L1", 4));
         desk.checkout("L1");
         assertEquals(1, printer.ids.size(),
-                "checkout harus memanggil pay() tepat satu kali pada objek yang diberikan lewat constructor (Pertemuan 11: DIP)");
+                "checkout harus memanggil pay() tepat satu kali pada objek yang diberikan lewat constructor");
         assertEquals("L1", printer.ids.get(0), "Kode yang dikirim ke pay() harus L1");
         assertEquals(4000.0, printer.amounts.get(0), 0.001, "Jumlah harus calculateFare() milik perjalanan itu");
     }

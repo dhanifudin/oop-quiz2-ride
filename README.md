@@ -25,7 +25,7 @@ The quiz has **five stages of increasing difficulty**. The order follows the lec
 - **Stages 1 to 3 are worth 55 points.** If you finish all three, you pass comfortably.
 - **Each stage stands on its own.** The tests for stages 3 to 5 use classes made by the tests, not your own classes. If you are stuck on one stage, move on to the next: you can still earn its points.
 - **All tests are visible.** Open the `src/test` folder to read what is checked. You may read the tests, but you must not change them.
-- **A failing test gives a hint.** The failure message names the rule that was broken and the meeting to review.
+- **A failing test gives a hint.** The failure message names the rule that was broken.
 
 ## Class Diagram
 
@@ -73,8 +73,6 @@ The example goes through the stages one by one. Notice the pattern, then apply i
 
 **Goal:** complete `Passenger` so that it stores data and keeps the name valid.
 
-**Review:** Meeting 2 (class and object) and Meeting 3 (encapsulation).
-
 **What you do:**
 
 1. Declare fields for the code and the name. Every field is `private`.
@@ -92,8 +90,6 @@ Fields are written at the top of the class, each starting with `private`. In the
 ## Stage 2: Abstract Class and Interface (20 points)
 
 **Goal:** create two subclasses of `Ride`, and give an extra ability to only one of them.
-
-**Review:** Meeting 9 (abstract class, interface, choosing between them) and Meetings 6 to 7 (`extends`, `super`, `@Override`).
 
 **What you do:**
 
@@ -113,8 +109,6 @@ Create the new class in the same folder as the other classes. A subclass constru
 
 **Goal:** complete `RideCalculator` so that it processes many rides through the `Ride` type, and rejects invalid data with an exception.
 
-**Review:** Meeting 10 (polymorphism, `instanceof`, `try`/`catch`, `throw`, `throws`).
-
 **What you do:**
 
 1. `totalFare`: add up the fare of all rides in one loop. An empty list gives 0.
@@ -133,8 +127,6 @@ One loop is enough. Inside it, call the same method on each object and let each 
 ## Stage 4: Collections (15 points)
 
 **Goal:** complete `RideDispatcher` so that it stores rides and finds them quickly.
-
-**Review:** Meeting 11 (the Collections part: `ArrayList` and `Map`).
 
 **What you do:**
 
@@ -156,8 +148,6 @@ Two collections work side by side: the `List` remembers the order, the `Map` fin
 ## Stage 5: SOLID (30 points)
 
 **Goal:** apply the SOLID principles in `RideDispatcher` through one method, `checkout`.
-
-**Review:** Meeting 11 (the SOLID part: SRP, OCP, LSP, ISP, DIP).
 
 **What you do:**
 
@@ -226,7 +216,7 @@ This is a standard Maven project, with no extra configuration.
 
 ## Reading the Test Results
 
-Run `mvn test` in the terminal, or look at the **Actions** tab. Every failing test writes one sentence that names the **rule that was broken** and the **meeting to review**. Fix one test group at a time, then run that group again. If you see the error `Not implemented yet`, that method is still empty.
+Run `mvn test` in the terminal, or look at the **Actions** tab. Every failing test writes one sentence that names the **rule that was broken**. Fix one test group at a time, then run that group again. If you see the error `Not implemented yet`, that method is still empty.
 
 ## Grading
 

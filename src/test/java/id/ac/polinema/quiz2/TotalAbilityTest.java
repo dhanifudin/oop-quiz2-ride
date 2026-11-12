@@ -17,7 +17,7 @@ class TotalAbilityTest {
         orders.add(new TestSupport.TestAbilityOrder("L2", 3));
         orders.add(new TestSupport.TestAbilityOrder("L3", 1));
         assertEquals(1000.0, RideCalculator.totalInsurance(orders), 0.001,
-                "Periksa dengan instanceof Insurable, lalu jumlahkan insuranceFee() (Pertemuan 10: instanceof)");
+                "Periksa dengan instanceof Insurable, lalu jumlahkan insuranceFee()");
     }
 
     @Test

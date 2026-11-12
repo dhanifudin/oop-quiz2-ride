@@ -42,7 +42,7 @@ final class TestSupport {
         } catch (InvocationTargetException e) {
             throw e.getCause();
         } catch (ClassCastException e) {
-            return fail(className + " harus extends Ride (Pertemuan 9: kelas abstrak).");
+            return fail(className + " harus extends Ride.");
         }
     }
 

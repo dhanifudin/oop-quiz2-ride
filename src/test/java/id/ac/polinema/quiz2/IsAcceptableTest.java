@@ -20,7 +20,7 @@ class IsAcceptableTest {
     @DisplayName("isAcceptable bernilai false (bukan melempar) untuk jarak tidak valid")
     void falseWhenInvalid() {
         assertFalse(RideCalculator.isAcceptable(new TestSupport.TestOrder("L1", 0)),
-                "Tangkap InvalidDistanceException dengan catch lalu kembalikan false (Pertemuan 10: try/catch)");
+                "Tangkap InvalidDistanceException dengan catch lalu kembalikan false");
         assertFalse(RideCalculator.isAcceptable(new TestSupport.TestOrder("L1", 50 + 0.5)),
                 "jarak di atas 50 km harus menghasilkan false");
     }

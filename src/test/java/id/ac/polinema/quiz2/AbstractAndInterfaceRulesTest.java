@@ -14,7 +14,7 @@ class AbstractAndInterfaceRulesTest {
     @DisplayName("Ride tetap kelas abstrak")
     void baseStaysAbstract() {
         assertTrue(Modifier.isAbstract(Ride.class.getModifiers()),
-                "Ride harus tetap abstract: objek perjalanan umum tidak masuk akal (Pertemuan 9)");
+                "Ride harus tetap abstract: objek perjalanan umum tidak masuk akal");
     }
 
     @Test
@@ -22,7 +22,7 @@ class AbstractAndInterfaceRulesTest {
     void abilityIsSmallInterface() {
         assertTrue(Insurable.class.isInterface(), "Insurable harus tetap interface");
         assertEquals(1, Insurable.class.getDeclaredMethods().length,
-                "Insurable harus kecil dan fokus: satu method saja (Pertemuan 11: ISP)");
+                "Insurable harus kecil dan fokus: satu method saja");
     }
 
     @Test
@@ -30,7 +30,7 @@ class AbstractAndInterfaceRulesTest {
     void sub1DoesNotImplementAbility() throws Throwable {
         Ride order = TestSupport.newStudentOrder("BikeRide", "L1", 3);
         assertFalse(order instanceof Insurable,
-                "BikeRide tidak punya asuransi perjalanan, jadi tidak boleh implements Insurable (Pertemuan 11: ISP)");
+                "BikeRide tidak punya asuransi perjalanan, jadi tidak boleh implements Insurable");
     }
 
     @Test
